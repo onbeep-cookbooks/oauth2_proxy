@@ -1,0 +1,22 @@
+.DS_Store
+.vagrant
+Berksfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+/cookbooks
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+# PT client
+.pt
+
+.kitchen/
+.kitchen.local.yml
+VERSION

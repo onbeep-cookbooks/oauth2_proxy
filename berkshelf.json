@@ -1,0 +1,8 @@
+{
+  "chef":{
+    "chef_server_url":"https://api.opscode.com/organizations/onbeep",
+    "validation_client_name":"onbeep-validator",
+    "client_key":"/home/ubuntu/.ssh/id_obci.pem",
+    "node_name":"obci"
+  }
+}
