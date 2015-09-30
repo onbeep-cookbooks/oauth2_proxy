@@ -29,7 +29,7 @@ end
 | --------- |-------------|
 | `default['oauth2_proxy']['install_url']` | URL of release to download and install |
 | `default['oauth2_proxy']['checksum']` | Checksum of release |
-| `default['oauth2_proxy']['install_path']` | Path of where to intall binaries |
+| `default['oauth2_proxy']['install_path']` | Path of where to install binaries |
 | `default['oauth2_proxy']['config_files']` | Location to store config_files |
 
 
