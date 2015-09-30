@@ -9,6 +9,8 @@ Cookbook to install and configure oauth2_proxy with LWRP
 
 ## Platform Tested
 
+* Ubuntu 14.04 LTS
+
 ## Usage
 
 oauth2_proxy utilizes a lightweight resource provider (LWRP) to handle installing oauth2_proxy, generate an oauth2_proxy config, and install a service for oauth2_proxy.
