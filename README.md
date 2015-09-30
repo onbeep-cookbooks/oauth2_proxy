@@ -19,7 +19,7 @@ oauth2_proxy_site 'default' do
   client_id 'foo'
   client_secret 'biscuit'
   cookie_secret 'stroopwafel'
-  upstreams [ 'braindump.sql' ]
+  upstreams [ 'http://localhost' ]
 end
 ```
 
