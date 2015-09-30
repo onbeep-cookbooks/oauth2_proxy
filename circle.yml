@@ -9,10 +9,8 @@ machine:
     AWS_UBUNTU_1404_AMI: "ami-e63b3e8e"
 
 dependencies:
-  pre:
-    - sudo apt-get install libboost1.54-dev
-    - sudo apt-get install libgecode-dev
-    - USE_SYSTEM_GECODE=1 gem install dep-selector-libgecode dep_selector
+  cache_directories:
+    - "~/vendor/"
 
 test:
   override:
