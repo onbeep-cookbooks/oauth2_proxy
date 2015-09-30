@@ -1,7 +1,7 @@
 # Makefile for oauth2_proxy Cookbook.
 #
 # Author:: Mike Juarez <mike@orionlabs.co>
-# License:: # Copyright (c) 2015 Orion Labs, Inc., All Rights Reserved.
+# License:: Apache License, Version 2.0
 # Source:: https://github.com/onbeep-cookbooks/oauth2_proxy
 #
 
