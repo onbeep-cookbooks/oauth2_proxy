@@ -2,7 +2,7 @@
 
 ![image](https://circleci.com/gh/onbeep-cookbooks/oauth2_proxy/tree/master.svg?style=shield&circle-token=89bd4ccd24e3a88c0149ac1f3f8f82b936fe5017)
 
-Cookbook to install and configure oauth2_proxy with LWRP
+Cookbook to install and configure [oauth2_proxy](https://github.com/bitly/oauth2_proxy) with LWRP
 
 ## Requirements
 
@@ -15,7 +15,7 @@ Cookbook to install and configure oauth2_proxy with LWRP
 
 ## Usage
 
-oauth2_proxy utilizes a lightweight resource provider (LWRP) to handle installing oauth2_proxy, generate an oauth2_proxy config, and install a service for oauth2_proxy.
+oauth2_proxy Cookbook utilizes a lightweight resource provider (LWRP) to handle installing [oauth2_proxy](https://github.com/bitly/oauth2_proxy), generate an oauth2_proxy config, and install a service for oauth2_proxy.
 
 ```
 oauth2_proxy_site 'default' do
@@ -50,3 +50,14 @@ No-op.
 ## Author and Contributors
 
 * Author:: Mike Juarez <mike@orionlabs.co>
+
+## Copyright
+
+Copyright 2015 Orion Labs, Inc.
+
+## License
+
+* The oauth2_proxy Cookbook is covered under the Apache License, Version 2.0
+* The oauth2_proxy program is covered under the MIT license.
+
+See LICENSE for the Apache License, Version 2.0
