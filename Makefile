@@ -15,6 +15,10 @@ BUNDLE_CMD ?= ~/.rbenv/shims/bundle
 
 BUNDLE_EXEC ?= bundle exec
 
+KNIFE_CONFIG ?= $(HOME)/.chef/knife.rb
+
+COOKBOOK_NAME ?= pygster
+
 
 # Target groups:
 
@@ -23,6 +27,7 @@ test: install foodcritic kitchen_test
 install: $(BUNDLE_CMD) bundle_install
 
 clean: kitchen_destroy
+	rm -rf build
 
 release: bump_version git_push_tags berks_upload
 
@@ -64,3 +69,13 @@ berks_upload: berks_install
 
 git_push_tags:
 	git push origin --tags
+
+# knife targets:
+
+publish: build_path
+	$(BUNDLE_EXEC) knife cookbook site share $(COOKBOOK_NAME) "Web Servers" -c $(KNIFE_CONFIG) -o build -n
+
+# Work-around for the CI's checkout/workspace path:
+build_path:
+	mkdir -p build
+	rsync --exclude=build/ -avr . build/$(COOKBOOK_NAME)
