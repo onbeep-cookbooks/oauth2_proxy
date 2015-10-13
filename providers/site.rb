@@ -5,7 +5,7 @@
 # Author:: Mike Juarez <mike@orionlabs.co>
 # Copyright:: Copyright 2015 OnBeep, Inc.
 # License:: Apache License, Version 2.0
-# Source:: https://github.com/onbeep-cookbooks/oauth2_proxy
+# Source:: https://github.com/orion-cookbooks/oauth2_proxy
 #
 
 def whyrun_supported?

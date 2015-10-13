@@ -1,6 +1,6 @@
 # oauth2_proxy
 
-![image](https://circleci.com/gh/onbeep-cookbooks/oauth2_proxy/tree/master.svg?style=shield&circle-token=89bd4ccd24e3a88c0149ac1f3f8f82b936fe5017)
+![image](https://circleci.com/gh/orion-cookbooks/oauth2_proxy/tree/master.svg?style=shield&circle-token=89bd4ccd24e3a88c0149ac1f3f8f82b936fe5017)
 
 Cookbook to install and configure [oauth2_proxy](https://github.com/bitly/oauth2_proxy) with LWRP
 
