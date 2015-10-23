@@ -13,6 +13,7 @@ group :unit do
   gem 'rspec', '2.14'  # https://gist.github.com/jcarapet/9531009#comment-1249838
   gem 'berkshelf',  '~> 3.1'
   gem 'chefspec',   '~> 3.4'
+  gem 'faraday_middleware'
 end
 
 group :kitchen_common do
