@@ -25,9 +25,10 @@ deployment:
       - git config --global user.email "code@onbeep.com"
       - bundle exec scmversion bump auto --default patch
       - git push origin --tags
-      - bundle exec berks install -c berkshelf.json
-      - bundle exec berks upload -c berkshelf.json
+      - bundle exec berks install -c test/ci/berkshelf.json
+      - bundle exec berks upload -c test/ci/berkshelf.json
       - curl -X POST $TRIGGER_URL
+      - knife cookbook site share oauth2_proxy Networking -c test/ci/knife.rb -o build
 
 notify:
   webhooks:
