@@ -28,7 +28,7 @@ deployment:
       - bundle exec berks install -c test/ci/berkshelf.json
       - bundle exec berks upload -c test/ci/berkshelf.json
       - curl -X POST $TRIGGER_URL
-      - bundle exec knife cookbook site share oauth2_proxy Networking -c test/ci/knife.rb -o build -n
+      - bundle exec knife cookbook site share oauth2_proxy Networking -c test/ci/knife.rb -o build -n -o ../
 
 notify:
   webhooks:
