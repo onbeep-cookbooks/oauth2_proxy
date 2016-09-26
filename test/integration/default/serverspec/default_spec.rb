@@ -9,8 +9,15 @@ describe 'oauth2_proxy::default' do
     it { should be_file }
   end
 
-  describe file('/etc/init/oauth2_proxy-default.conf') do
-    it { should be_file }
+  case os[:family]
+  when 'redhat'
+    describe file('/etc/systemd/system/oauth2_proxy-default.service') do
+      it { should be_file }
+    end
+  when 'ubuntu'
+    describe file('/etc/init/oauth2_proxy-default.conf') do
+      it { should be_file }
+    end
   end
 
   describe service('oauth2_proxy-default') do
