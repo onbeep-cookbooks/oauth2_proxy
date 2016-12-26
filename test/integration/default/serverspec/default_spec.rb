@@ -15,8 +15,15 @@ describe 'oauth2_proxy::default' do
       it { should be_file }
     end
   when 'ubuntu'
-    describe file('/etc/init/oauth2_proxy-default.conf') do
-      it { should be_file }
+    case os[:release]
+    when '14.04'
+      describe file('/etc/init/oauth2_proxy-default.conf') do
+        it { should be_file }
+      end
+    when '16.04'
+      describe file('/etc/default/oauth2_proxy-default') do
+        it { should be_file }
+      end
     end
   end
 
