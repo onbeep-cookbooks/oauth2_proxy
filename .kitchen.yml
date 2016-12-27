@@ -2,14 +2,16 @@
 driver:
   name: vagrant
 
+driver_config:
+  customize:
+    memory: 768
+
 provisioner:
   name: chef_zero
 
 platforms:
   - name: ubuntu-14.04
-    driver_config:
-      customize:
-        memory: 768
+  - name: centos-7.2
 
 suites:
   - name: default
@@ -17,4 +19,3 @@ suites:
       - recipe[apt]
       - recipe[fake]
     attributes:
-    

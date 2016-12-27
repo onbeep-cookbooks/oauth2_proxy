@@ -12,6 +12,7 @@ Cookbook to install and configure [oauth2_proxy](https://github.com/bitly/oauth2
 ## Platform Tested
 
 * Ubuntu 14.04 LTS
+* CentOS 7.2
 
 ## Usage
 
