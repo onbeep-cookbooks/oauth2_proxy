@@ -8,8 +8,6 @@
 # Source:: https://github.com/orion-cookbooks/oauth2_proxy
 #
 
-Apache License, Version 2.0
-
 require 'spec_helper'
 
 describe 'oauth2_proxy::default' do

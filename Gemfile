@@ -4,24 +4,25 @@ source 'https://rubygems.org'
 gem 'rake'
 
 group :lint do
-  gem 'foodcritic', '~> 3.0'
-  gem 'rubocop', '~> 0.18'
-  gem 'rainbow', '< 2.0'
+  gem 'foodcritic'
+  gem 'rubocop'
+  gem 'rainbow'
 end
 
 group :unit do
-  gem 'rspec', '2.14'  # https://gist.github.com/jcarapet/9531009#comment-1249838
-  gem 'berkshelf',  '~> 4.0'
-  gem 'chefspec',   '~> 3.4'
+  gem 'rspec'
+  gem 'berkshelf'
+  gem 'chefspec'
   gem 'faraday_middleware'
+  gem 'pleaserun'
 end
 
 group :kitchen_common do
-  gem 'test-kitchen', '~> 1.2'
+  gem 'test-kitchen'
 end
 
 group :kitchen_vagrant do
-  gem 'kitchen-vagrant', '~> 0.14'
+  gem 'kitchen-vagrant'
 end
 
 group :kitchen_cloud do
@@ -31,6 +32,6 @@ group :kitchen_cloud do
 end
 
 group :integration do
-  gem 'serverspec', '~> 0.15'
-  gem 'thor-scmversion', '~> 1.4'
+  gem 'serverspec'
+  gem 'thor-scmversion'
 end

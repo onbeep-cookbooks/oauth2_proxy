@@ -50,11 +50,13 @@ No-op.
 
 ## Author and Contributors
 
-* Author:: Mike Juarez <mike@orionlabs.co>
+* Author: Mike Juarez
+* Maintainer: Michael F. Weinberg
 
 ## Copyright
 
 Copyright 2015 Orion Labs, Inc.
+Copyright 2016 Michael F. Weinberg
 
 ## License
 
