@@ -27,6 +27,7 @@ def generate_cfg_hash
     :client_id => new_resource.client_id,
     :client_secret => new_resource.client_secret,
     :pass_access_token => new_resource.pass_access_token,
+    :pass_basic_auth => new_resource.pass_basic_auth,
     :authenticated_emails_file => new_resource.authenticated_emails_file,
     :htpasswd_file => new_resource.htpasswd_file,
     :custom_templates_dir => new_resource.custom_templates_dir,

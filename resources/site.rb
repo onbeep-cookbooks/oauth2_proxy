@@ -38,6 +38,7 @@ attribute :client_id, kind_of: String
 attribute :client_secret, kind_of: String
 
 attribute :pass_access_token, kind_of: [TrueClass, FalseClass]
+attribute :pass_basic_auth, kind_of: [TrueClass, FalseClass]
 
 attribute :authenticated_emails_file, kind_of: String
 
