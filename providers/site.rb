@@ -95,5 +95,5 @@ def load_current_resource
     action :nothing
   end.run_action(:install)
 
-  @current_resource = Chef::Resource::Oauth2ProxySite.new(@new_resource.name)
+  @current_resource = Chef::Resource.resource_for_node(:oauth2_proxy_site, node).new(@new_resource.name)
 end
