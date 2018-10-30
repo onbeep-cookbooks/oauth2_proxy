@@ -8,7 +8,6 @@
 #
 
 include_recipe 'ark'
-include_recipe 'pleaserun::default'
 
 ark 'oauth2_proxy' do
   url node['oauth2_proxy']['install_url']

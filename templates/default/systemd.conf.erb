@@ -1,0 +1,18 @@
+[Unit]
+Description=oauth2_proxy for <%= @name -%>
+
+[Service]
+Type=simple
+User=root
+Group=root
+# Load env vars from /etc/default/ and /etc/sysconfig/ if they exist.
+# Prefixing the path with '-' makes it try to load, but if the file doesn't
+# exist, it continues onward.
+EnvironmentFile=-/etc/default/oauth2_proxy-<%= @name %>
+EnvironmentFile=-/etc/sysconfig/oauth2_proxy-<%= @name %>
+ExecStart=/usr/local/oauth2_proxy/oauth2_proxy "-config=/etc/oauth2_proxy/<%= @name -%>.cfg"
+Restart=always
+WorkingDirectory=/
+
+[Install]
+WantedBy=multi-user.target
